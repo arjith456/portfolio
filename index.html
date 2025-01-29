@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjith S A - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+        }
+        .card {
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .timeline-item {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 5px solid #3b82f6;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="hero py-10">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">Hello, I'm Arjith S A</h1>
+            <p class="text-lg mt-2">A passionate Java Programmer & Video Editor</p>
+        </div>
+    </header>
+
+    <section class="skills py-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-5">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card p-5 bg-white shadow-xl rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Java Programming</h3>
+                    <p>I excel in creating efficient and scalable applications using Java.</p>
+                </div>
+                <div class="card p-5 bg-white shadow-xl rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Video Editing</h3>
+                    <p>I create engaging and professional videos with advanced editing tools.</p>
+                </div>
+                <div class="card p-5 bg-white shadow-xl rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Problem Solving</h3>
+                    <p>Strong analytical skills to debug and optimize code effectively.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio py-10 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-5">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card p-5 bg-white shadow-xl rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Java Application</h3>
+                    <p>A desktop app to manage inventory for small businesses.</p>
+                    <a href="#" class="text-blue-500 underline mt-3 block">View Details</a>
+                </div>
+                <div class="card p-5 bg-white shadow-xl rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Video Editing Portfolio</h3>
+                    <p>Showcasing creative edits and transitions in my video projects.</p>
+                    <a href="#" class="text-blue-500 underline mt-3 block">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline py-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-5">My Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3 class="text-xl font-bold">2023</h3>
+                    <p>Graduated from G.K. Shetty Vivekananda Vidyalaya.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3 class="text-xl font-bold">2027</h3>
+                    <p>Expected graduation from university.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact py-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-5">Get In Touch</h2>
+            <p class="mb-4">Feel free to reach out for collaborations or just a friendly chat!</p>
+            <a href="mailto:arjithsa@example.com" class="px-5 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-700 transition">Email Me</a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 py-4 text-white text-center">
+        <p>&copy; 2025 Arjith S A. All rights reserved.</p>
+    </footer>
+</body>
+</html>
