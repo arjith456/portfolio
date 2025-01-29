@@ -1,146 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garnet Durai - Portfolio</title>
-    <style>
-        /* Apple Theme */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f7;
-            color: #1d1d1f;
-        }
-        
-        /* Header */
-        header.apple-theme {
-            background-color: #ffffff;
-            color: #1d1d1f;
-            text-align: center;
-            padding: 25px;
-            font-size: 24px;
-            font-weight: bold;
-            border-bottom: 1px solid #d2d2d7;
-        }
-        
-        /* Navigation */
-        nav.apple-theme {
-            background-color: #ffffff;
-            padding: 10px;
-            text-align: center;
-            border-bottom: 1px solid #d2d2d7;
-        }
-        
-        nav.apple-theme ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        nav.apple-theme ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        
-        nav.apple-theme ul li a {
-            text-decoration: none;
-            color: #0071e3;
-            font-weight: 500;
-            transition: color 0.3s ease-in-out;
-        }
-        
-        nav.apple-theme ul li a:hover {
-            color: #1d1d1f;
-        }
-        
-        /* Sections */
-        section.apple-theme {
-            background-color: white;
-            margin: 20px auto;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 80%;
-        }
-        
-        /* Project Cards */
-        .project {
-            background-color: #f5f5f7;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* Links */
-        a {
-            color: #0071e3;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            section.apple-theme {
-                width: 95%;
+<html lang=""en>
+    <head>
+        <meta charset="UTH-8">
+        <meta http-equiv="X-UA-Compatible" content=""IE=edge>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Harry - Developer Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin:0;
+                padding:0;
             }
-        }
-    </style>
-    <script defer src="script.js"></script>
-</head>
-<body>
-    <header class="apple-theme">
-        <h1>Garnet Durai</h1>
-        <p>MERN Stack Developer | Python & C++ Enthusiast</p>
-    </header>
-    
-    <nav class="apple-theme">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section id="about" class="apple-theme">
-        <h2>About Me</h2>
-        <p>Passionate developer specializing in the MERN stack, Python, and C++. I love building scalable applications and solving challenging problems.</p>
-    </section>
-    
-    <section id="skills" class="apple-theme">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>C++</li>
-            <li>MongoDB</li>
-            <li>Express.js</li>
-            <li>React.js</li>
-            <li>Node.js</li>
-        </ul>
-    </section>
-    
-    <section id="projects" class="apple-theme">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
-        </div>
-    </section>
-    
-    <section id="contact" class="apple-theme">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: <a href="#">Your LinkedIn</a></p>
-    </section>
-</body>
+            body{
+                background-color: rgb(0, 0, 33);
+                color:white;
+                font-family:'Poppins',sans-serif;
+            }
+            nav{
+                display:flex;
+                justify-content:space-around;
+                align-items:center;
+                height:80px;
+                background-color: rgb(18,18,62);
+            }
+            nav ul{
+                display:flex;
+                justify-content:center;
+            }
+            nav ul li{
+                list-style: none;
+                margin: 0 23px;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: white;
+            }
+            nav ul li a:hover{
+                color: rgb(153,153,226);
+                font-size: 1.01rem;
+            }
+            main hr{
+                border:0;
+                background: #9c97f1;
+                height:auto1.2px;
+                margin:40px 84px;
+            }
+            .left{
+                font-size: 1.5rem;
+            } 
+            .firstSection{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 130px 0;
+            }
+            .firstSection > div{
+               width: 30%;
+            }
+            .leftSection{
+                font-size: 3rem;
+                margin:70px;
+            }
+            .rightSection img{ 
+                width: 80%;
+            }
+            .purple{
+                color: blueviolet;
+            }
+            .text-grey{
+                color: gray;
+            }
+            #element{
+                color: rgb(170,170,228);
+            }
+            .secondSection{
+                max-width: 80vw;
+                margin:auto;
+                height: 80vh;
+            }
+            .secondSection h1{
+                font-size: 1.9rem;
+            }
+            .secondSection .box{
+                background: white;
+                width: 80vw;
+                height: 2px;
+                margin: 56px 0;
+                display: flex;
+            }
+            .secondSection.vertical{
+                height:93px;
+                width: 1px;
+                background-color: white;
+                margin: 0 120px;
+            }
+            .image-top{
+                width: 23px;
+                position: relative;
+                top: -32px;
+                left:-9px;
+            }
+            .vertical-title{
+                position: relative;
+                top: 75px;
+                width: 150px;
+                font-size: 14px;
+            }
+            .vertical-desc{
+                position: relative;
+                top: 86px;
+                color: gray;
+                width: 150px;
+                font-size: 9px;
+            }
+            footer{
+                background-color: #0e0e1a;
+                height: 233px;
+            }
+            .footer{
+                display: flex;
+                padding: 23px 122px;
+                justify-content: space-evenly;
+            }
+            .footer ul{
+                list-style: none;
+            }
+            .footer > div{
+                width: 223px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="left">Harry's Portfolio</div>
+                <div class="right"></div>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">About</a></li>
+                        <li><a href="/">services</a></li>
+                        <li><a href="/">Projects</a></li>
+                        <li><a href="/">Contact Me</a></li>
+                    </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="firstSection">
+                <div class="leftSection">
+                    Hi,My name is <span class="purple"> Harry</span>
+
+                    <div>and I am a Passionate</div>
+                     <span id="element"></span>
+                </div>
+                <div class="rightSection">
+                    <img src="bg.png" alt="">
+                </div>
+                </section>
+                <hr>
+                <section class="secondSection">
+                    <span class="text-grey">What I have done so far</span>
+                    <h1>Past Experience</h1>
+                    
+                    <div class="box">
+                        <div class="vertical">
+                            <img class="image-top" src="developer.png" alt="">
+                            <div class="vertical-title">
+                                HTML Developer - Pintrest (2010-2012)
+                            </div>
+                            <div class="vertical-desc">
+                                LoreuewgubvjGWEu
+                                ahvbuE
+                                fufgug8e9
+                            </div>
+                        </div>
+                        <div class="vertical">
+                            <img class="image-top" src="fb.png" alt="">
+                            <div class="vertical-title">
+                                HTML Developer - Facebook (2010-2012)
+                            </div>
+                            <div class="vertical-desc">
+                                LoreuewgubvjGWEu
+                                ahvbuE
+                                fufgug8e9
+                            </div>
+                        </div>
+                        <div class="vertical">
+                            <img class="image-top" src="insta.png" alt="">
+                            <div class="vertical-title">
+                                HTML Developer - Instagram (2014-2015)
+                            </div>
+                            <div class="vertical-desc">
+                                fuahwpubviubes
+                                abviuwEB;GVIUWEBGV
+                                wbnino9wirjbnebio
+                            </div>
+                        </div>
+                        <div class="vertical">
+                            <img class="image-top" src="twitter.png" alt="">
+                            <div class="vertical-title">
+                                HTML Developer - Twitter (2015-2016)
+                            </div>
+                            <div class="vertical-desc">
+                                fuahwpubviubes
+                                abviuwEB;GVIUWEBGV
+                                wbnino9wirjbnebio
+                            </div>
+                        </div>
+                        <div class="vertical">
+                            <img class="image-top" src="fb.png" alt="">
+                            <div class="vertical-title">
+                                HTML Developer - Facebook (2016-2017)
+                            </div>
+                            <div class="vertical-desc">
+                                fuahwpubviubes
+                                abviuwEB;GVIUWEBGV
+                                wbnino9wirjbnebio
+                            </div>
+                        </div>
+                        <div class="vertical">
+                            <img class="image-top" src="youtube.png" alt="">
+                            <div class="vertical-title">
+                                HTML Developer - Twitter (2017-2018)
+                            </div>
+                            <div class="vertical-desc">
+                                fuahwpubviubes
+                                abviuwEB;GVIUWEBGV
+                                wbnino9wirjbnebio
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footer-first">
+                    <h3>Harry's Developer Portfolio</h3>
+                </div>
+                <div class="footer-second">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <dic class="footer-third">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Contact</li>
+                    </ul>
+                </dic> 
+                <div class="footer-fourth">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed=new Typed('#element', {
+                strings: ['Web Developer', 'Graphic Designer','Web Designer','Video Editor'],
+                typespeed:50, 
+            });
+        </script>
+    </body>
 </html>
