@@ -1,278 +1,111 @@
 <!DOCTYPE html>
-<html lang=""en>
-    <head>
-        <meta charset="UTH-8">
-        <meta http-equiv="X-UA-Compatible" content=""IE=edge>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Harry - Developer Portfolio</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-        <style>
-            *{
-                margin:0;
-                padding:0;
-            }
-            body{
-                background-color: rgb(0, 0, 33);
-                color:white;
-                font-family:'Poppins',sans-serif;
-            }
-            nav{
-                display:flex;
-                justify-content:space-around;
-                align-items:center;
-                height:80px;
-                background-color: rgb(18,18,62);
-            }
-            nav ul{
-                display:flex;
-                justify-content:center;
-            }
-            nav ul li{
-                list-style: none;
-                margin: 0 23px;
-            }
-            nav ul li a{
-                text-decoration: none;
-                color: white;
-            }
-            nav ul li a:hover{
-                color: rgb(153,153,226);
-                font-size: 1.01rem;
-            }
-            main hr{
-                border:0;
-                background: #9c97f1;
-                height:auto1.2px;
-                margin:40px 84px;
-            }
-            .left{
-                font-size: 1.5rem;
-            } 
-            .firstSection{
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                margin: 130px 0;
-            }
-            .firstSection > div{
-               width: 30%;
-            }
-            .leftSection{
-                font-size: 3rem;
-                margin:70px;
-            }
-            .rightSection img{ 
-                width: 80%;
-            }
-            .purple{
-                color: blueviolet;
-            }
-            .text-grey{
-                color: gray;
-            }
-            #element{
-                color: rgb(170,170,228);
-            }
-            .secondSection{
-                max-width: 80vw;
-                margin:auto;
-                height: 80vh;
-            }
-            .secondSection h1{
-                font-size: 1.9rem;
-            }
-            .secondSection .box{
-                background: white;
-                width: 80vw;
-                height: 2px;
-                margin: 56px 0;
-                display: flex;
-            }
-            .secondSection.vertical{
-                height:93px;
-                width: 1px;
-                background-color: white;
-                margin: 0 120px;
-            }
-            .image-top{
-                width: 23px;
-                position: relative;
-                top: -32px;
-                left:-9px;
-            }
-            .vertical-title{
-                position: relative;
-                top: 75px;
-                width: 150px;
-                font-size: 14px;
-            }
-            .vertical-desc{
-                position: relative;
-                top: 86px;
-                color: gray;
-                width: 150px;
-                font-size: 9px;
-            }
-            footer{
-                background-color: #0e0e1a;
-                height: 233px;
-            }
-            .footer{
-                display: flex;
-                padding: 23px 122px;
-                justify-content: space-evenly;
-            }
-            .footer ul{
-                list-style: none;
-            }
-            .footer > div{
-                width: 223px;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="left">Harry's Portfolio</div>
-                <div class="right"></div>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">About</a></li>
-                        <li><a href="/">services</a></li>
-                        <li><a href="/">Projects</a></li>
-                        <li><a href="/">Contact Me</a></li>
-                    </ul>
-            </nav>
-        </header>
-        
-        <main>
-            <section class="firstSection">
-                <div class="leftSection">
-                    Hi,My name is <span class="purple"> Harry</span>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjith S A - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+        }
+        .card {
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .timeline-item {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 5px solid #3b82f6;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="hero py-10">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">Hello, I'm Arjith S A</h1>
+            <p class="text-lg mt-2">A passionate Java Programmer & Video Editor</p>
+        </div>
+    </header>
 
-                    <div>and I am a Passionate</div>
-                     <span id="element"></span>
+    <section class="skills py-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-5">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card p-5 bg-white shadow-xl rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Java Programming</h3>
+                    <p>I excel in creating efficient and scalable applications using Java.</p>
                 </div>
-                <div class="rightSection">
-                    <img src="bg.png" alt="">
+                <div class="card p-5 bg-white shadow-xl rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Video Editing</h3>
+                    <p>I create engaging and professional videos with advanced editing tools.</p>
                 </div>
-                </section>
-                <hr>
-                <section class="secondSection">
-                    <span class="text-grey">What I have done so far</span>
-                    <h1>Past Experience</h1>
-                    
-                    <div class="box">
-                        <div class="vertical">
-                            <img class="image-top" src="developer.png" alt="">
-                            <div class="vertical-title">
-                                HTML Developer - Pintrest (2010-2012)
-                            </div>
-                            <div class="vertical-desc">
-                                LoreuewgubvjGWEu
-                                ahvbuE
-                                fufgug8e9
-                            </div>
-                        </div>
-                        <div class="vertical">
-                            <img class="image-top" src="fb.png" alt="">
-                            <div class="vertical-title">
-                                HTML Developer - Facebook (2010-2012)
-                            </div>
-                            <div class="vertical-desc">
-                                LoreuewgubvjGWEu
-                                ahvbuE
-                                fufgug8e9
-                            </div>
-                        </div>
-                        <div class="vertical">
-                            <img class="image-top" src="insta.png" alt="">
-                            <div class="vertical-title">
-                                HTML Developer - Instagram (2014-2015)
-                            </div>
-                            <div class="vertical-desc">
-                                fuahwpubviubes
-                                abviuwEB;GVIUWEBGV
-                                wbnino9wirjbnebio
-                            </div>
-                        </div>
-                        <div class="vertical">
-                            <img class="image-top" src="twitter.png" alt="">
-                            <div class="vertical-title">
-                                HTML Developer - Twitter (2015-2016)
-                            </div>
-                            <div class="vertical-desc">
-                                fuahwpubviubes
-                                abviuwEB;GVIUWEBGV
-                                wbnino9wirjbnebio
-                            </div>
-                        </div>
-                        <div class="vertical">
-                            <img class="image-top" src="fb.png" alt="">
-                            <div class="vertical-title">
-                                HTML Developer - Facebook (2016-2017)
-                            </div>
-                            <div class="vertical-desc">
-                                fuahwpubviubes
-                                abviuwEB;GVIUWEBGV
-                                wbnino9wirjbnebio
-                            </div>
-                        </div>
-                        <div class="vertical">
-                            <img class="image-top" src="youtube.png" alt="">
-                            <div class="vertical-title">
-                                HTML Developer - Twitter (2017-2018)
-                            </div>
-                            <div class="vertical-desc">
-                                fuahwpubviubes
-                                abviuwEB;GVIUWEBGV
-                                wbnino9wirjbnebio
-                            </div>
-                        </div>
-                    </div>
-
-
-                </section>
-        </main>
-        <footer>
-            <div class="footer">
-                <div class="footer-first">
-                    <h3>Harry's Developer Portfolio</h3>
-                </div>
-                <div class="footer-second">
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Services</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-                <dic class="footer-third">
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Services</li>
-                        <li>Contact</li>
-                    </ul>
-                </dic> 
-                <div class="footer-fourth">
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Services</li>
-                        <li>Contact</li>
-                    </ul>
+                <div class="card p-5 bg-white shadow-xl rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Problem Solving</h3>
+                    <p>Strong analytical skills to debug and optimize code effectively.</p>
                 </div>
             </div>
-        </footer>
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <script>
-            var typed=new Typed('#element', {
-                strings: ['Web Developer', 'Graphic Designer','Web Designer','Video Editor'],
-                typespeed:50, 
-            });
-        </script>
-    </body>
+        </div>
+    </section>
+
+    <section class="portfolio py-10 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-5">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card p-5 bg-white shadow-xl rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Java Application</h3>
+                    <p>A desktop app to manage inventory for small businesses.</p>
+                    <a href="#" class="text-blue-500 underline mt-3 block">View Details</a>
+                </div>
+                <div class="card p-5 bg-white shadow-xl rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Video Editing Portfolio</h3>
+                    <p>Showcasing creative edits and transitions in my video projects.</p>
+                    <a href="#" class="text-blue-500 underline mt-3 block">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline py-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-5">My Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3 class="text-xl font-bold">2023</h3>
+                    <p>Graduated from G.K. Shetty Vivekananda Vidyalaya.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3 class="text-xl font-bold">2027</h3>
+                    <p>Expected graduation from university.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact py-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-5">Get In Touch</h2>
+            <p class="mb-4">Feel free to reach out for collaborations or just a friendly chat!</p>
+            <a href="mailto:arjithsa@example.com" class="px-5 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-700 transition">Email Me</a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 py-4 text-white text-center">
+        <p>&copy; 2025 Arjith S A. All rights reserved.</p>
+    </footer>
+</body>
 </html>
