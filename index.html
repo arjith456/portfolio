@@ -3,144 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garnet Durai - Portfolio</title>
+    <title>Arjith S A - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Apple Theme */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f7;
-            color: #1d1d1f;
+            font-family: 'Arial', sans-serif;
         }
-        
-        /* Header */
-        header.apple-theme {
-            background-color: #ffffff;
-            color: #1d1d1f;
-            text-align: center;
-            padding: 25px;
-            font-size: 24px;
-            font-weight: bold;
-            border-bottom: 1px solid #d2d2d7;
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
         }
-        
-        /* Navigation */
-        nav.apple-theme {
-            background-color: #ffffff;
-            padding: 10px;
-            text-align: center;
-            border-bottom: 1px solid #d2d2d7;
+        .card {
+            transition: transform 0.3s ease;
         }
-        
-        nav.apple-theme ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        .card:hover {
+            transform: translateY(-10px);
         }
-        
-        nav.apple-theme ul li {
-            display: inline;
-            margin: 0 15px;
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
         }
-        
-        nav.apple-theme ul li a {
-            text-decoration: none;
-            color: #0071e3;
-            font-weight: 500;
-            transition: color 0.3s ease-in-out;
-        }
-        
-        nav.apple-theme ul li a:hover {
-            color: #1d1d1f;
-        }
-        
-        /* Sections */
-        section.apple-theme {
-            background-color: white;
-            margin: 20px auto;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 80%;
-        }
-        
-        /* Project Cards */
-        .project {
-            background-color: #f5f5f7;
+        .timeline-item {
+            background: white;
             padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* Links */
-        a {
-            color: #0071e3;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            section.apple-theme {
-                width: 95%;
-            }
+            margin-bottom: 10px;
+            border-left: 5px solid #3b82f6;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
     </style>
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <header class="apple-theme">
-        <h1>Garnet Durai</h1>
-        <p>MERN Stack Developer | Python & C++ Enthusiast</p>
+    <header class="hero py-10">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">Hello, I'm Arjith S A</h1>
+            <p class="text-lg mt-2">A passionate Java Programmer & Video Editor</p>
+        </div>
     </header>
-    
-    <nav class="apple-theme">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section id="about" class="apple-theme">
-        <h2>About Me</h2>
-        <p>Passionate developer specializing in the MERN stack, Python, and C++. I love building scalable applications and solving challenging problems.</p>
-    </section>
-    
-    <section id="skills" class="apple-theme">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>C++</li>
-            <li>MongoDB</li>
-            <li>Express.js</li>
-            <li>React.js</li>
-            <li>Node.js</li>
-        </ul>
-    </section>
-    
-    <section id="projects" class="apple-theme">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
+
+    <section class="skills py-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-5">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card p-5 bg-white shadow-xl rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Java Programming</h3>
+                    <p>I excel in creating efficient and scalable applications using Java.</p>
+                </div>
+                <div class="card p-5 bg-white shadow-xl rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Video Editing</h3>
+                    <p>I create engaging and professional videos with advanced editing tools.</p>
+                </div>
+                <div class="card p-5 bg-white shadow-xl rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Problem Solving</h3>
+                    <p>Strong analytical skills to debug and optimize code effectively.</p>
+                </div>
+            </div>
         </div>
     </section>
-    
-    <section id="contact" class="apple-theme">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: <a href="#">Your LinkedIn</a></p>
+
+    <section class="portfolio py-10 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-5">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card p-5 bg-white shadow-xl rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Java Application</h3>
+                    <p>A desktop app to manage inventory for small businesses.</p>
+                    <a href="#" class="text-blue-500 underline mt-3 block">View Details</a>
+                </div>
+                <div class="card p-5 bg-white shadow-xl rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Video Editing Portfolio</h3>
+                    <p>Showcasing creative edits and transitions in my video projects.</p>
+                    <a href="#" class="text-blue-500 underline mt-3 block">View Details</a>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section class="timeline py-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-5">My Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3 class="text-xl font-bold">2023</h3>
+                    <p>Graduated from G.K. Shetty Vivekananda Vidyalaya.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3 class="text-xl font-bold">2027</h3>
+                    <p>Expected graduation from university.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact py-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-5">Get In Touch</h2>
+            <p class="mb-4">Feel free to reach out for collaborations or just a friendly chat!</p>
+            <a href="mailto:arjithsa@example.com" class="px-5 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-700 transition">Email Me</a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 py-4 text-white text-center">
+        <p>&copy; 2025 Arjith S A. All rights reserved.</p>
+    </footer>
 </body>
 </html>
